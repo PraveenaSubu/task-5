@@ -250,3 +250,57 @@ console.log(odd);
 
 //3.b Convert all the strings to title caps in a string array
 //array function
+
+
+
+
+//3.c sum of all elements in an array
+//arrow function
+
+var sum =([]) =>
+{
+    var res=0;
+    for(var i=0;i<sum.length;i++)
+    {
+    res=res+sum[i];
+    console.log(res);
+    }   
+}
+console.log(sum([23,56,8,56,24]));
+
+//3.d Return all the prime numbers in an array
+
+var a = [];
+var prime = [];
+var result=(arr)=>
+{
+      for (var i=0;i<arr.length; i++) {
+        for (var j=2;i<arr[i]; i++) {
+
+       if ((arr % j) == 0) { 
+        break;
+       } 
+     }
+     if(arr[i]==j){
+        a.push(arr[i]);
+}
+      }
+      return a;
+    }
+
+//3.e Return all the palindromes in an array
+var result2=(arr)=>
+{
+    var a=arr[i];
+    var reve= a.reverse();
+    var str=reve.join('');
+    if(a===str)
+    {
+        console.log("the string is palindrome");
+    }
+    else
+    {
+    console.log("the string is not a palindrome");
+    }
+}
+console.log(result2(["love"]))
